@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+nav {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.login-btn {
+    padding: 0.2rem 0.1rem;
+    border: 2px solid #ae7c09;
+    border-radius: 4px;
+    color: #ae7c09;
+    font-weight: bold;
+}
+
+.hero {
+    height: 90vh;
+    background: url('https://source.unsplash.com/1600x900/?interior,design') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    /* height of header */
+}
+
+.hero {
+    background-image: url(image.png);
+}
+
+.overlay {
+    color: #000000;
+    margin-bottom: 300px;
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+}
+
+.content {
+    padding: 4rem 5%;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.content p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+}
+
+.cta {
+    background: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+}
